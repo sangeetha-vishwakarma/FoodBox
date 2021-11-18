@@ -1,0 +1,54 @@
+<div class="container rounded bg-white mt-5 mb-5">
+    <!-- <form [formGroup]="form" #ProductInformation (ngSubmit)="save(ProductInformation)"> -->
+    <!-- <form onsubmit="saveDetails()"> -->
+    <div class="row">
+        <div class="col-md-3 border-right">
+            <!-- <div class="d-flex flex-column align-items-center text-center p-3 py-5"><img class="rounded-circle mt-5" 
+                src={{cuisine.image}}></div> -->
+                <img class="card-img-top" data-src="{{ cuisine.image }}" alt="Card image cap">
+
+        </div>
+        <div class="col-md-5 border-right">
+            <div class="p-3 py-5">
+                <div class="d-flex justify-content-between align-items-center mb-3">
+                    <h4 class="text-right">Edit Product Details</h4>
+                </div>
+                <div class="row mt-2">
+                    <div class="col-md-6"><label class="labels">Product Id</label>
+                        <input type="text" class="form-control"  disabled value="{{cuisine.product_id}}">
+                    </div>
+                    <div class="col-md-6"><label class="labels">Product Name</label>
+                        <input type="text" class="form-control" disabled value="{{cuisine.product_name}}" >
+                    </div>
+                </div>
+                <div class="row mt-3">
+                    <div class="col-md-12"><label class="labels">Description</label>
+                        <input type="text" class="form-control" name="description" placeholder="Description" 
+                            [src]="cuisine.description" [(ngModel)]="cuisine.description">
+                    </div>
+                    <div class="col-md-12"><label class="labels">Price (INR)</label>
+                        <input type="text" class="form-control" name="price" placeholder="Price in Rs." 
+                            [src]="cuisine.price" [(ngModel)]="cuisine.price">
+                    </div>                    
+                </div>
+                <div class="row mt-3">
+                    <div class="col-md-12"><label class="labels">Enabled </label>
+                        <input [(ngModel)]="cuisine.enabled" type="checkbox"/>
+
+                        <!-- <input type="checkbox" class="form-control" name="enabled" 
+                        [src]="cuisine.enabled" [(ngModel)]="cuisine.enabled" > -->
+                    </div>
+                </div>
+                <div class="row mt-3">
+                    <div class="col-md-12"><label class="labels">Image</label>
+                        <input type="text" class="form-control" name="image" placeholder="image path" 
+                        [src]="cuisine.image" [(ngModel)]="cuisine.image" value="">
+                    </div>
+                </div>
+                <div class="mt-5 text-center"><button class="btn btn-primary profile-button" (click)="saveDetails()" type="button">Save</button></div>
+            </div>
+        </div>
+       
+    </div>
+    <!-- </form> -->
+</div>

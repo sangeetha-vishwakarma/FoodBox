@@ -1,0 +1,58 @@
+
+<form [formGroup]="form" #AdminInformation (ngSubmit)="AdminForm(AdminInformation)">
+
+    
+  <div class="row">
+    <div class=" col-md-offset-1 col-md-4">
+      <h2>Sign Up</h2>
+  </div>
+</div>
+<div class="row">
+  <div class=" col-md-offset-1 col-md-4">
+    <h2></h2>
+</div>
+</div>
+
+  <div class="row">
+    <div class=" col-md-offset-1 col-md-4">
+        <label for="fullName"> Name </label>
+        <input formControlName="fullName" class="form-control" type="text"> 
+    </div>
+  </div>
+
+  <div class="row">
+    <div class=" col-md-offset-1 col-md-4">
+        <label for="email"> Email </label>
+        <input formControlName="email" class="form-control" type="text"> 
+    </div>
+  </div>
+
+  <div class="row">
+    <div class=" col-md-offset-1 col-md-4">
+        <label for="password"> Password </label>
+        <input formControlName="password" class="form-control" type="password"> 
+    </div>
+  </div>
+
+  <div class="row">
+    <div class=" col-md-offset-1 col-md-4">
+        <label for="confirmPassword"> Confirm Password </label>
+        <input formControlName="confirmPassword" class="form-control" type="password"> 
+    </div>
+  </div>
+
+  <div class="row">
+    <div class=" col-md-offset-1 col-md-4">
+        <label for="role"> Role </label>
+        <input formControlName="role" class="form-control" type="text"> 
+    </div>
+  </div>
+
+  <div class="row" style="margin-top: 40px;">
+    <div class="col-md-offset-1 col-md-4">
+        <button class="btn btn-md btn-primary btn-style"  >Save</button>
+    </div>
+  </div>
+
+
+</form>

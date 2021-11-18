@@ -1,0 +1,77 @@
+{
+    "questions": [
+        {
+            "id": 1,
+            "question": "What guarantees type-safety in a collection",
+            "weightage": 2,
+            "options": [{"id":1, "answer":"Generics"}
+                       ,{"id":2, "answer":"Abstract classes"}
+                       ,{"id":3, "answer":"Interfaces"}
+                       ,{"id":4, "answer":"Collection"}
+                       ],
+            "correctAnswer": {"id":1, "answer":"Generics"},
+            "selectedAnswer": {"id":4, "answer":"Collection"}
+        },    
+        {
+            "id": 1,
+            "question": "HashSet internally uses",
+            "weightage": 2,
+            "options": [{"id":1, "answer":"Set"}
+                       ,{"id":2, "answer":"HashMap"}
+                       ,{"id":3, "answer":"List"}
+                       ,{"id":4, "answer":"Collection"}
+                       ],
+            "correctAnswer": {"id":2, "answer":"HashMap"},
+            "selectedAnswer": {"id":4, "answer":"Collection"}
+        },
+        {
+            "id": 2,
+            "question": "The most used interfaces from the collection framework are",
+            "weightage": 2,
+            "options": [{"id":1, "answer":"List"}
+                       ,{"id":2, "answer":"Map"}
+                       ,{"id":3, "answer":"Set"}
+                       ,{"id":4, "answer":"Class"}
+                       ],
+            "correctAnswer": {"id":1, "answer":"List"},
+            "selectedAnswer": {"id":4, "answer":"Class"}
+        },
+        {
+            "id": 3,
+            "question": "The root interface of Java collection framework hierarchy is",
+            "weightage": 2,
+            "options": [{"id":1, "answer":"Collection"}
+                       ,{"id":2, "answer":"Root"}
+                       ,{"id":3, "answer":"Collections"}
+                       ,{"id":4, "answer":"Iterable"}
+                       ],
+            "correctAnswer": {"id":4, "answer":"Iterable"},
+            "selectedAnswer": {"id":2, "answer":"Root"}
+        },
+        {
+            "id": 4,
+            "question": "LinkedList implements",
+            "weightage": 2,
+            "options": [{"id":1, "answer":"List"}
+                       ,{"id":2, "answer":"Deque"}
+                       ,{"id":3, "answer":"None of the Above"}
+                       ,{"id":4, "answer":"Both of Above"}
+                       ],
+            "correctAnswer": {"id":4, "answer":"Both of Above"},
+            "selectedAnswer": {"id":3, "answer":"None of the Above"}
+        },
+        {
+            "id": 5,
+            "question": "Which of these methods deletes all the elements from invoking collection",
+            "weightage": 2,
+            "options": [{"id":1, "answer":"clear()"}
+                       ,{"id":2, "answer":"reset()"}
+                       ,{"id":3, "answer":"delete()"}
+                       ,{"id":4, "answer":"refresh()"}
+                       ],
+            "correctAnswer": {"id":1, "answer":"clear()"},
+            "selectedAnswer": {"id":4, "answer":"refresh()"}
+        }
+
+    ]
+  } 

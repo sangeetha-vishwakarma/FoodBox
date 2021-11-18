@@ -1,0 +1,64 @@
+<div class="container mt-5">
+    <div class="d-flex justify-content-center row">
+        <div class="col-md-10 col-lg-10">
+            <div class="border">
+                <div class="question bg-white p-3 border-bottom">
+                    <div class="d-flex flex-row justify-content-between align-items-center mcq">
+                        <h4>MCQ Quiz</h4>
+                    </div>
+                </div>
+                <div class="question bg-white p-3 border-bottom">
+                    <div class="d-flex flex-row align-items-center question-title">
+                        <h3 class="text-danger">Q.</h3>
+                        <h5 class="mt-1 ml-2">{{ questions[currentIndex].question }} ?</h5>
+                    </div>
+              
+                    <div class="ans ml-auto">
+                        <label class="radio"> 
+                            <input type="radio"
+                            [value]="questions[currentIndex].options[0].id"
+                            name="selectedAnswer" [(ngModel)]="questions[currentIndex].selectedAnswer" />
+                            <span>{{questions[currentIndex].options[0].answer}}</span>
+                        </label>
+                    </div>
+                    <div class="ans ml-2">
+                        <label class="radio"> 
+                            <input type="radio"
+                            [value]="questions[currentIndex].options[1].id"
+                            name="selectedAnswer" [(ngModel)]="questions[currentIndex].selectedAnswer" />
+                            <span>{{questions[currentIndex].options[1].answer}}</span>
+                        </label>
+                    </div>
+                    <div class="ans ml-2">
+                        <label class="radio"> 
+                            <input type="radio"
+                            [value]="questions[currentIndex].options[2].id"
+                            name="selectedAnswer" [(ngModel)]="questions[currentIndex].selectedAnswer" />
+                            <span>{{questions[currentIndex].options[2].answer}}</span>
+                        </label>
+                    </div>
+                    <div class="ans ml-2">
+                        <label class="radio"> 
+                            <input type="radio"
+                            [value]="questions[currentIndex].options[3].id"
+                            name="selectedAnswer" [(ngModel)]="questions[currentIndex].selectedAnswer" />
+                            <span>{{questions[currentIndex].options[3].answer}}</span>
+                        </label>
+                    </div>
+                </div>
+                <div class="d-flex flex-row justify-content-between align-items-center p-3 bg-white">
+                    <button class="btn btn-primary d-flex align-items-center btn-danger" type="button"
+                        (click)="getPreviousQuestion()">
+                        <i class="fa fa-angle-left mt-1 mr-1"></i>&nbsp;previous</button>
+
+                        <button class="btn btn-primary border-success align-items-center btn-success" type="button"
+                        (click)="submit()">
+                        Submit<i class="fa fa-angle-right ml-2"></i></button>
+
+                    <button class="btn btn-primary border-success align-items-center btn-success" type="button"
+                        (click)="getNextQuestion()">
+                        Next<i class="fa fa-angle-right ml-2"></i></button></div>
+            </div>
+        </div>
+    </div>
+</div>

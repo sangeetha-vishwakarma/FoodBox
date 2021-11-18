@@ -1,0 +1,63 @@
+
+  
+        <section class="jumbotron text-center">
+            <div class="container">
+              <h1 class="jumbotron-heading">Foodbox The Official Home Food
+              </h1>
+              <p class="lead text-muted">Your cart ..</p>
+              <!-- <p>
+                <a href="#" class="btn btn-primary my-2">Main call to action</a>
+                <a href="#" class="btn btn-secondary my-2">Secondary action</a>
+              </p> -->
+            </div>
+          </section>
+
+          <div *ngIf="cuisineList.size>0;else other_content">
+          <button class="btn btn-success btn-lg float-right" (click)="checkout();">Checkout</button>
+          </div>
+          <ng-template #other_content>
+            <p class="card-text"> <b> Your Cart is Empty</b></p>
+        </ng-template>
+          <div class="album py-5 bg-light">
+            <div class="container">
+
+              <div class="row">
+                <div class="col-md-4" *ngFor="let cuisine of cuisineList">
+                      <div class="card mb-4 shadow-sm">
+                        <img class="card-img-top" data-src="{{ cuisine.image }}" alt="Card image cap">
+                        <div class="card-body">
+                          <p class="card-text">{{ cuisine.description }}</p>
+                          <div class="d-flex justify-content-between align-items-center">
+                              <div class="form-check-inline">
+                                      <button>Add</button>
+                                      <input class="quantity" min="0" name="quantity" value="{{ cuisine.quantity }}"
+                                             type="number">
+                              <!-- <div class="input-group">
+                                  <span class="input-group-btn">
+                                      <button type="button" class="btn btn-default btn-number" disabled="disabled" data-type="minus" data-field="quant[1]">
+                                          <span class="glyphicon glyphicon-minus"></span>
+                                      </button>
+                                  </span>
+                                  <input type="text" name="quant[1]" class="form-control input-number" value="1" min="1" max="10">
+                                  <span class="input-group-btn">
+                                      <button type="button" class="btn btn-default btn-number" data-type="plus" data-field="quant[1]">
+                                          <span class="glyphicon glyphicon-plus"></span>
+                                      </button>
+                                  </span>
+                              </div> -->
+                            <!-- <div class="btn-group">
+                              <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                              <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                            </div> -->
+                            <small class="text-muted">9 mins</small>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                
+                
+              </div>
+            </div>
+          </div>
+    
+  

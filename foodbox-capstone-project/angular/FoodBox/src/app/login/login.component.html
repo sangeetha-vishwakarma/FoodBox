@@ -1,0 +1,39 @@
+
+ <div class="card border-0 shadow my-5">
+  <div class="card-body p-5">
+<form [formGroup]="form" #LoginInformation (ngSubmit)="Login(LoginInformation)">
+
+  <div class="row">
+    <div class=" col-md-offset-1 col-md-4">
+      <h2>Login</h2>
+  </div>
+</div>
+<div class="row">
+  <div class=" col-md-offset-1 col-md-4">
+    <h2></h2>
+</div>
+</div>
+
+  <div class="row">
+    <div class=" col-md-offset-1 col-md-4">
+        <label for="username"> Username </label>
+        <input formControlName="email" class="form-control" type="text"> 
+    </div>
+  </div>
+
+  <div class="row">
+    <div class=" col-md-offset-1 col-md-4">
+        <label for="password"> Password </label>
+        <input formControlName="password" class="form-control" type="password"> 
+    </div>
+  </div>
+
+  <div class="row" style="margin-top: 40px;">
+    <div class="col-md-offset-1 col-md-4">
+        <button class="btn btn-md btn-primary btn-style"  >Login</button>
+    </div>
+  </div>
+
+</form>
+</div>
+</div>

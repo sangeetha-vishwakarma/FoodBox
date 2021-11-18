@@ -1,0 +1,39 @@
+{
+  "cuisines": [
+      {
+          "id": 1,
+          "name": "Cuisine1",
+          "image": "assets\\img\\italian-food.jpg",
+          "description": "description1 description1 description1 description1",
+          "price": 100
+      },    
+      {
+        "id": 2,
+        "name": "Cuisine2",
+        "image": "assets\\img\\italian-food.jpg",
+        "description": "description2 description2 description2 description2",
+        "price": 200
+    }, 
+    {
+        "id": 3,
+        "name": "Cuisine3",
+        "image": "assets\\img\\italian-food.jpg",
+        "description": "description3 description3 description3 description3",
+        "price": 300
+    }, 
+    {
+        "id": 4,
+        "name": "Cuisine4",
+        "image": "assets\\img\\italian-food.jpg",
+        "description": "description4 description4 description4 description4",
+        "price": 400
+    }, 
+    {
+        "id": 5,
+        "name": "Cuisine5",
+        "image": "assets\\img\\italian-food.jpg",
+        "description": "description5 description5 description5 description5",
+        "price": 500
+    }
+  ]
+} 

@@ -1,0 +1,53 @@
+
+  
+        <section class="jumbotron text-center">
+            <div class="container">
+              <h1 class="jumbotron-heading">Foodbox The Official Home Food
+              </h1>
+              <p class="lead text-muted">Manage our cuisines..</p>
+              <!-- <p>
+                <a href="#" class="btn btn-primary my-2">Main call to action</a>
+                <a href="#" class="btn btn-secondary my-2">Secondary action</a>
+              </p> -->
+            </div>
+          </section>
+          <!-- <button class="btn btn-success btn-lg float-right" type="submit">Add New</button> -->
+          <!-- <ul class="nav nav-pills">
+          <li class="nav-item"><a [routerLink]="[/add-product]" class="nav-link">Add New </a></li>      
+          </ul> -->
+          <button type="button" class="btn btn-primary btn-lg">
+            <a routerLink="../add-product" class="nav-link active"  style="color: aliceblue;">  Add New</a></button>
+
+          <div class="album py-5 bg-light">
+            <div class="container">
+    
+              <div class="row">
+                  <div class="col-md-4" *ngFor="let cuisine of cuisineList">
+                      <div class="card mb-4 shadow-sm">
+                        <img class="card-img-top" data-src="{{ cuisine.image }}" alt="Card image cap">
+                        <div class="card-body">
+                          <p class="card-text"><b>{{ cuisine.product_name }}</b></p>
+                          <p class="card-text">{{ cuisine.description }}</p>
+
+                          <div class="d-flex justify-content-between align-items-center">
+                              <div class="form-check-inline">
+                                <ul class="nav nav-pills">
+                                    <!-- <li class="nav-item"><a href="#" (click)="addDetails()" class="nav-link">Delete</a></li>       -->
+                                  <li><button class="btn btn-primary profile-button"  (click)="deleteProduct(cuisine.product_id)">Delete</button></li>
+                                    <!-- <li class="nav-item"><a [routerLink]='["/product-detail", cuisine.product_id]' class="nav-link">Edit</a></li>                               -->
+                                    <li class="nav-item"><a [routerLink]='["/product-detail", cuisine.product_id]' class="nav-link">Edit</a></li>                              
+                                    <li class="nav-item"> <small class="text-muted">INR{{cuisine.price}}</small>
+                                    </li>                              
+
+                                  </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                
+                
+              </div>
+            </div>
+          </div>
+    
+  
